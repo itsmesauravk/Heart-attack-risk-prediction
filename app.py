@@ -14,6 +14,10 @@ standard_scaler = joblib.load('standard_scaler.joblib')
 # Title
 st.title('Heart Attack Risk Prediction')
 
+st.markdown('@Saurav Karki 2024/08/24')
+st.markdown('Medium: https://medium.com/@sauravkarki10.12/heart-attack-risk-classification-26fe83aab494')
+st.markdown('Github: https://github.com/itsmesauravk/Heart-attack-risk-prediction')
+
 # Function to get input and perform feature engineering
 def get_input():
     st.sidebar.header('User Input')
@@ -126,9 +130,3 @@ if st.button('Predict using Random Forest Classifier'):
     except Exception as e:
         st.error(f"Error: {e}")
 
-# Footer
-st.markdown('Developed by Saurav Karki')
-st.markdown('Email: sauravkarki10.12@gmail.com')
-st.markdown('LinkedIn: https://www.linkedin.com/in/saurav-karki-7b7a0b1b9/')
-st.markdown('GitHub: http://github.com/itsmesauravk')
-st.markdown('Medium: https://sauravkarki.medium.com')
